@@ -1,0 +1,115 @@
+@import url("special-category.css");
+@import url("base.css");
+
+.login{
+    margin: 100px auto;
+    width: 35%;
+    height: 620px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 7px 9px rgba(0, 0, 0, 0.2);
+}
+.login .container{
+    padding: 20px;
+    /* background-color: black; */
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.login .container > p , .login .container > a{
+    width: 100%;
+    text-align: center;
+    padding:10px 20px;
+}
+.login p:first-child{
+    font-size: 35px;
+}
+.login .container > p.sign-in{
+    position: relative;
+    color:var(--paragraph-color);
+    margin-top: 40px;
+    
+}
+.login .container > p.sign-in::after , .login .container > p.sign-in::before{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background-color: var(--paragraph-color);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login .container > p.sign-in::after{
+    right: -10px;
+}
+.login .container > p.sign-in::before{
+    left: -10px;
+    /* top: 48px; */
+}
+.login .container a:has(.fa-brands){
+    color: var(--principal-color);
+    font-size: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 2px;
+    border: 1px solid var(--border-color);
+}
+.login .container a:has(.fa-brands):hover{
+    border: 1px solid var(--paragraph-color);
+}
+.login .container a:has(.fa-brands) i{
+    padding-right: 10px;
+}
+.login form label{
+    padding: 10px 0 10px;
+    display: inline-block;
+    color: var(--paragraph-color);
+    font-size: 15px;
+}
+.login form input[type="email"] , .login form input[type="text"], .login form input[type="password"] , .login form select{
+    padding: 10px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    width: 100%;
+}
+.login .name{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0 10px;
+}
+.login .container form div.remember{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login .container form div.remember .option label{
+    padding-left: 10px;
+    color: var(--principal-color);
+}
+.login .container form button{
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    background-color: var(--principal-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 0;
+    cursor: pointer;
+}
+.login .container form button:hover{
+    background-color: var(--hover-buttons-color);
+}
+.login .container form button i{
+    padding-right: 5px;
+    font-size: 18px;
+}

@@ -1,0 +1,71 @@
+@import url("login.css");
+@import url("base.css");
+
+.featured-products .container {
+    grid-template-columns: repeat(auto-fit,250px);
+}
+.featured-products .container .box{
+    box-shadow: -1px 2px 13px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.featured-products .container .description > p.product-name {
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-bottom: 20px !important;
+}
+.featured-products .container .description ul li{
+    padding-bottom:15px;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.featured-products .container .description ul li a{
+    padding-left: 10px;
+    text-transform: capitalize;
+    color: var(--principal-color);
+}
+.featured-products .container .description ul li a:hover{
+    color: blue;
+}
+.featured-products .container .description ul li span{
+    margin-right: 15px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: var(--principal-color);
+}
+
+/* .featured-products .container .description ul li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #777;
+} */
+
+.featured-products .container .description ul li:not(:last-child){
+    border-bottom: 1px solid #c3c3c3;
+}
+.featured-products .container .description ul li:nth-child(n+2){
+    margin-top: 20px;
+    color: var(--principal-color);
+}
+.featured-products .container .box .img-box {
+    height: auto;
+    /* background-color: #E6E6E6; */
+    /* background-color: red; */
+    position: relative;
+}
+.featured-products .container .box .img-box img {
+    width: 100%;
+}
+.popular-brands .container .box{
+    padding-bottom: 0;
+}

@@ -1,0 +1,189 @@
+@import url('special-category.css');
+
+/* start acconut */
+.account{
+    margin-top: 100px;
+}
+.account .container{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+}
+.account .container .account-list ul{
+    padding: 25px 20px;
+    border: 1px solid var(--paragraph-color);
+    /* display: none; */
+}
+.account .container .account-list ul li:nth-child(n+2){
+    margin-top: 20px;
+}
+.account .container .account-list ul li{
+    font-size: 16px;
+    /* background-color: green; */
+}
+.account .container .account-list ul li a.active{
+    background-color: var(--principal-color);
+    color: #fff;
+}
+.account .container .account-list ul li:hover a.active{
+    color: #fff;
+}
+.account .container .account-list ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--principal-color);
+    padding: 16px;
+}
+.account .container .account-list ul li:hover a{
+    color: #0d77fd;
+}
+.account .container .col-2{
+    padding-left: 50px;
+    padding-top: 15px;
+    font-size: 16px;
+    align-self: flex-start;
+}
+.account .container .col-2 > div.active , form.active{
+    display: none;
+}
+.col-2 p{
+    color: var(--paragraph-color);
+}
+.col-2 .account-message p:first-child {
+    padding-bottom: 50px;
+}
+.col-2 .account-message p:first-child a{
+    color: #0d77fd;
+}
+.col-2 .account-message p:last-child{
+    line-height: 30px;
+}
+
+.orders table{
+    width: 100%;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+.orders table tr{
+    position: relative;
+}
+.orders table tr::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-color);
+}
+.orders table tr:nth-child(n+2){
+    background-color: #fff;
+}
+.orders table tr th{
+    padding: 10px 0 10px 0;
+}
+.orders table tr td{
+    padding: 20px 0;
+}
+.orders table tr td span.status{
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 13px;
+    /* padding: 5px 20px; */
+    width: calc(100% - 20px);
+}
+span.status-completed{
+    background-color: #198754;
+}
+span.status-failed{
+    background-color: #dc3545;
+}
+.orders table td ul.actions{
+}
+.orders table td ul.actions li{
+    display: inline-block;
+    /* width: 50px; */
+    /* margin-left: 50px; */
+    background-color: var(--principal-color);
+    padding: 8px 5px;
+}
+.orders table td ul.actions li:hover{
+    background-color: var(--hover-buttons-color);
+}
+.orders table td ul.actions li a{
+    color: #fff;
+}
+
+.address{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.address p{
+    color: var(--principal-color);
+
+}
+.address > p{
+    grid-column: span 2;
+    text-align: left;
+    padding-bottom: 25px;
+}
+.address p.address{
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+.address .col p:nth-child(n+2){
+    color: var(--paragraph-color);
+    padding-top: 5px;
+}
+.payment > a{
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: var(--principal-color);
+    color: #fff;
+    margin: 20px 0 0 25px;
+}
+.payment > a:hover{
+    background-color: var(--hover-buttons-color);
+}
+
+form.details{
+    padding: 20px;
+    border:1px solid var(--border-color)
+}
+form.details label{
+    display: inline-block;
+    /* padding-bottom: 05px; */
+    color: var(--paragraph-color);
+    padding: 10px 0 10px 0;
+}
+.details input{
+    padding: 10px 10px 10px 12px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    width: 100%;
+}
+.details input[type="submit"]{
+    margin-top: 20px;
+    padding: 10px 15px;
+    /* width: 100px; */
+    background-color: var(--principal-color);
+    color: #fff;
+    width: auto;
+}
+.details input[type="submit"]:hover{
+    background-color: var(--hover-buttons-color);
+}
+.details .name{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0 10px;
+    align-items: center;
+}
+
+
+/* end account */

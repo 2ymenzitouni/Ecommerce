@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/account.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+             <span>Category Name</span>
+             <ul class="path">
+                 <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+                 <li><a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                 <li><a href="">Shop</a></li>
+                 <li><a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                 <li><a href="">Category Name</a></li>
+             </ul>
+        </div>
+     </section>
+    
+    <!-- start account -->
+     <div class="account">
+        <div class="container">
+            <div class="account-list">
+                
+                <ul>
+                    <li><a href="#" class="active">Dashboard<i class="fa-solid fa-house-chimney-user"></i></a></li>
+                    <li><a href="#">Orders<i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#">Downloads<i class="fa-solid fa-download"></i></a></li>
+                    <li><a href="#">Addresses<i class="fa-solid fa-id-badge"></i></a></li>
+                    <li><a href="#">Payment Methods<i class="fa-solid fa-sack-dollar"></i></a></li>
+                    <li><a href="#">Account Details<i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#">Logout<i class="fa-solid fa-right-from-bracket"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <!-- account message -->
+                <div class="account-message" id="Dashboard">
+                    <p>Hello Madison Ruiz (not Madison Ruiz? <a href="#">Logout</a>)</p>
+                    <p>From your account dashboard you can view your Recent Orders, manage your shipping and billing addesses and edit your password and account details</p>
+                </div>
+                <!-- orders -->
+                <div class="orders active" id="Orders">
+                    <table>
+                        <tr>
+                            <th>Order</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Total</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tr>
+                            <td>#800</td>
+                            <td>Novermber 15, 2021</td>
+                            <td><span class="status status-completed">Completed</span></td>
+                            <td>$100.00 for 1 item</td>
+                            <td>
+                                <ul class="actions">
+                                    <li><a href="#">View</a></li>
+                                    <!-- <li><a href="#"></a></li> -->
+                                    <!-- <li><a href="#"></a></li> -->
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#800</td>
+                            <td>Novermber 15, 2021</td>
+                            <td><span class="status status-failed">Failed</span></td>
+                            <td>$100.00 for 1 item</td>
+                            <td>
+                                <ul class="actions">
+                                    <li><a href="#">View</a></li>
+                                    <li><a href="#">Pay</a></li>
+                                    <li><a href="#">Cancel</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- downloads -->
+                <div class="downloads orders active" id="Downloads">
+                    <table>
+                        <tr>
+                            <th>Product</th>
+                            <th>Downloads Remaining</th>
+                            <th>Expires</th>
+                            <th>Download</th>
+                        </tr>
+                        <tr>
+                            <td>Stock Moview Clip</td>
+                            <td>12</td>
+                            <td><span>Novermber 15, 2021</span></td>
+                            <td>
+                                <ul class="actions">
+                                    <li><a href="#">Movie Clip 1</a></li>
+                                    <!-- <li><a href="#"></a></li> -->
+                                    <!-- <li><a href="#"></a></li> -->
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- address -->
+                <div class="address active" id="Addresses">
+                    <p>The following addresses will be used on the checkuot page by default.</p>
+                    <div class="billing-address col">
+                        <p class="address">Billing Addresses</p>
+                        <p>Madison Riiz</p>
+                        <p>Happy Street</p>
+                        <p>Cape Town</p>
+                        <p>Western Cape</p>
+                        <p>8001</p>
+                        <p>South Africa</p>
+                    </div>
+                    <div class="shipping-address col">
+                        <p class="address">Billing Addresses</p>
+                        <p>Madison Riiz</p>
+                        <p>Happy Street</p>
+                        <p>Cape Town</p>
+                        <p>Western Cape</p>
+                        <p>8001</p>
+                        <p>South Africa</p>
+                    </div>
+                </div>
+                <!-- payment -->
+                <div class="payment orders active" id="Payment Methods">
+                    <table>
+                        <tr>
+                            <th>Method</th>
+                            <th>Expires</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Visa ending in 1111</td>
+                            <td><span>11/12</span></td>
+                            <td>
+                                <ul class="actions">
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">Make Default</a></li>
+                                    <!-- <li><a href="#"></a></li> -->
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    <a href="#">Add Payment Method</a>
+                </div>
+                <!-- details -->
+                <form method="post" class="details active" id="Account Details">
+                    <div class="name">
+                        <label for="">First Name</label>
+                        <label for="">Last Name</label>
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                    <div class="email">
+                        <label for="">Email Address</label><br>
+                        <input type="text">
+                    </div>
+                    <div class="old-password">
+                        <label for="">Current Password</label><br>
+                        <input type="password" name="" id="">
+                    </div>
+                    <div class="new-password">
+                        <label for="">New Password</label><br>
+                        <input type="text"><br>
+                        <label for="">Confirm New Password</label><br>
+                        <input type="text">
+                    </div>
+                    <input type="submit" value="SAVE CHANGES">
+                </form>
+            </div>
+        </div>
+     </div>
+    <!-- end account -->
+    
+    
+    
+    
+    <!-- js -->
+    <script src="js/account.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@import url("special-category.css");
+@import url("base.css");
+
+.comparaison{
+
+}
+.comparaison .container{
+    
+}
+.comparaison .container table{
+    background-color: #e5e5e5;
+    margin-top: 50px;
+}
+.comparaison .container table tr{
+    background-color: #fff;
+}
+.comparaison .container table tr th ,td{
+    padding: 10px;
+}
+.comparaison .container table tr th:first-child ,td:first-child{
+    font-weight: bold;
+}
+.comparaison .container table td.buttons a{
+    margin-left: 10px;
+    padding: 10px;
+}
+.comparaison .container table td.buttons a:first-child{
+    background-color: var(--principal-color);
+    color: #fff;
+}
+.comparaison .container table td.buttons{
+    padding-top: 20px;
+}
+.comparaison .container table td.buttons a:last-child{
+    background-color: #dbdbdb;
+    color: var(--principal-color);
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/progress-bar.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- start section -->
+    <section>
+        <div class="container">
+             <span>Category Name</span>
+             <ul class="path">
+                 <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+                 <li><a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                 <li><a href="">Shop</a></li>
+                 <li><a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                 <li><a href="">Category Name</a></li>
+             </ul>
+        </div>
+     </section>
+     <!-- end section -->
+
+    <div class="checkout">
+        <div class="container">
+            <div class="col-1">
+                <div class="main">
+                    <ul>
+                        <li>
+                            <i class="icon uil uil-shopping-cart active"></i>
+                            <div class="progress active one">
+                                <p>1</p>
+                                <i class="uil uil-check"></i>
+                            </div>
+                            <p class="text active">Cart</p>
+                        </li>
+                        <li>
+                            <i class="icon uil uil-user-square"></i>
+                            <div class="progress two">
+                                <p>2</p>
+                                <i class="uil uil-check"></i>
+                            </div>
+                            <p class="text">Details</p>
+                        </li>
+                        <li>
+                            <i class="icon uil uil-cube"></i>
+                            <div class="progress three">
+                                <p>3</p>
+                                <i class="uil uil-check"></i>
+                            </div>
+                            <p class="text">Shipping</p>
+                        </li>
+                        <li>
+                            <i class="icon uil uil-credit-card"></i>
+                            <div class="progress four">
+                                <p>4</p>
+                                <i class="uil uil-check"></i>
+                            </div>
+                            <p class="text">Payment</p>
+                        </li>
+                        <li>
+                            <i class="icon uil uil-check-square"></i>
+                            <div class="progress five">
+                                <p>5</p>
+                                <i class="uil uil-check"></i>
+                            </div>
+                            <p class="text">Review</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="discount">
+                    <p class="head">Apply Discount</p>
+                    <div class="box">
+                        <input type="text" placeholder="Enter Discount Code">
+                        <a href="#">Apply</a>
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <p class="head">Order Summary</p>
+                    <div class="product">
+                        <div class="product-img">
+                                <img src="img/red-tshirt.png" alt="">
+                            </div>
+                            <div class="details">
+                                <p>White Polo T-Shirt</p>
+                                <p>19.90$ x 1</p>
+                            </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                                <img src="img/red-tshirt.png" alt="">
+                            </div>
+                            <div class="details">
+                                <p>White Polo T-Shirt</p>
+                                <p>19.90$ x 1</p>
+                            </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                                <img src="img/red-tshirt.png" alt="">
+                            </div>
+                            <div class="details">
+                                <p>White Polo T-Shirt</p>
+                                <p>19.90$ x 1</p>
+                            </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="prices">
+                    <div class="subtotal">
+                        <p>Subtotal:</p>
+                        <p>$198.00</p>
+                    </div>
+                    <div class="shipping">
+                        <p>Shipping:</p>
+                        <p>--</p>
+                    </div>
+                    <div class="taxes">
+                        <p>Taxes:</p>
+                        <p>$14.00</p>
+                    </div>
+                    <div class="discount">
+                        <p>Discount:</p>
+                        <p>--</p>
+                    </div>
+                    <div class="total">
+                        <p class="head">Total: </p>
+                        <p class="head"> 212.00$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="person">
+                    <div class="person-img">
+                        <img src="img/man-screaming.jpg" alt="">
+                    </div>
+                    <div class="person-details">
+                        <p>Jhon Michle</p>
+                        <p>michle@example.com</p>
+                    </div>
+                    <a href="#"><i class="fa-regular fa-pen-to-square"></i> EDIT PROFILE</a>
+                </div>
+                <p>Shipping Adress</p>
+                <select name="" id="">
+                    <option value="Address1">Address1</option>
+                    <option value="Address2">Address2</option>
+                    <option value="Address3">Address3</option>
+                </select>
+                <p>Billing Address</p>
+                <select name="" id="">
+                    <option value="Address1">Address1</option>
+                    <option value="Address2">Address2</option>
+                    <option value="Address3">Address3</option>
+                </select>
+                <div class="option"><input type="checkbox"><label for="checkbox">Same as shipping address</label></div>
+                <div class="buttons">
+                    <a href="#"><i class="fa-solid fa-chevron-left"></i>BACK TO CART</a>
+                    <a href="#">PROCEED TO CHECKOUT<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Js code -->
+    <script src="js/progress-bar.js"></script>
+</body>
+</html>

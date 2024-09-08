@@ -1,0 +1,71 @@
+@import url("special-category.css");
+@import url("base.css");
+
+.contact{
+
+}
+.contact .container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 20px 20px;
+}
+.contact .map{
+    grid-column: span 2;
+    background-color: red;
+    padding: 20px;
+}
+.contact form{
+    grid-column: span 1;
+    /* background-color: green; */
+    padding: 10px;
+    background-color: #f0f8ff;
+}
+.contact form > p{
+    font-size: 23px;
+}
+.contact form label{
+    padding: 20px 0;
+    display: inline-block;
+}
+.contact form input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    width: 100%;
+}
+.contact form textarea{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    width: 100%;
+}
+.contact form button{
+    outline: none;
+    border: none;
+    /* width: 100%; */
+    font-size: 15px;
+    text-align: center;
+    background-color: var(--principal-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.contact .info{
+    grid-column: span 1;
+    padding: 10px;
+}
+.contact .info p:nth-child(odd){
+    font-size: 20px;
+    color: var(--principal-color);
+    padding-bottom: 10px;
+}
+.contact .info span{
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #777;
+}
